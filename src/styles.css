@@ -5,6 +5,10 @@
 
 }
 
+.p-autocomplete {
+    width:100% !important
+}
+
 .p-button {
     background: var(--secondary-color) !important;
     border: var(--secondary-color) !important;
