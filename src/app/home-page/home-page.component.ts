@@ -11,6 +11,7 @@ export class HomePageComponent implements OnInit {
   results: string[];
   names: string[];
   selectedName: string;
+  filteredNames: any;
 
   constructor() { }
 
@@ -22,15 +23,20 @@ export class HomePageComponent implements OnInit {
       "Aron Jang": "Hermann",
       "John Doe": "Terry Hershey",
       "Alex Jang": "Waterwall",
-      "Rose Lee": "Waterwall"
-    };ß
+      "Rose Lee": "Waterwall",
+      "Jimmy Jang": "Buffalo Bayou",
+      "Derry Jang": "Eastern Glades"
+    };
 
   search(event) {
-    this.names = Object.entries(this.data).map(([k, v]) => k)
+    console.log(event.query)
+    if (this.names == undefined) {
+      this.names = Object.entries(this.data).map(([k, v]) => k)
+    }
+    this.filteredNames = this.names.filter(x => x.toUpperCase().includes(event.query.toUpperCase()));
   }
 
   select(event) {
-    console.log(event)
     this.selectedName = event
   }
 
