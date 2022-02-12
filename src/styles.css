@@ -1,7 +1,7 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 :root {
     --dusty-blue: #889bae;
-    --secondary-color: #d08488;
+    --secondary-color: #96b4a3;
 
 }
 
@@ -10,8 +10,8 @@
 }
 
 .p-button {
-    background: var(--secondary-color) !important;
-    border: var(--secondary-color) !important;
+    background: var(--dusty-blue) !important;
+    border: var(--dusty-blue) !important;
 }
 
 .p-inputtext:enabled:focus {
@@ -34,6 +34,6 @@
 }
 
 .p-toast {
-    width: 50% !important;
-    font-size: 10px !important;
+    width: 90vw !important;
+    font-size: 15px !important;
 }

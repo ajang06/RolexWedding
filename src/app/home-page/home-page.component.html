@@ -1,13 +1,13 @@
 <div class="container">
     <p-toast></p-toast>
     <div class="col-md-12">
-        <img class="title" src="assets\title2.gif">
+        <img class="title" src="assets\new_title.png">
     </div>
     <div class="content-container col-md-12">
         <p-autoComplete [(ngModel)]="text" [suggestions]="filteredNames" (completeMethod)="search($event)"
             [placeholder]="'Enter your first name'" [dropdown]="true" (onSelect)="select($event)"></p-autoComplete>
         <br>
-        <div class="displayTableInfo" *ngIf="selectedName"> Hey {{selectedName}}, you are at the
-            {{data[selectedName]}} table!</div>
+        <div class="displayTableInfo" *ngIf="selectedName"> Hey <span class = "display-bold">{{selectedName}}</span>, you are at the
+            <span class = "display-bold">{{data[selectedName]}} Table</span>!</div>
     </div>
 </div>
