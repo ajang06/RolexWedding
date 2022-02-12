@@ -1,0 +1,8 @@
+<h1>Welcome to the Rolex Wedding</h1>
+<p-autoComplete [(ngModel)]="text" [suggestions]="names" (completeMethod)="search($event)"
+    [placeholder]="'Enter your name'" [dropdown]="true"
+    (onSelect) = "select($event)"></p-autoComplete>
+
+    <br>
+    <br>
+<div *ngIf= "selectedName"> Hey {{selectedName}}, you are at the {{data[selectedName]}} table!</div>
