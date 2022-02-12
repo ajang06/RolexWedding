@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MessageService } from 'primeng/api';
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.css']
+  styleUrls: ['./home-page.component.css'],
+  providers: [MessageService]
 })
 export class HomePageComponent implements OnInit {
 
@@ -11,9 +12,9 @@ export class HomePageComponent implements OnInit {
   results: string[];
   names: string[];
   selectedName: string;
-  filteredNames: any;
+  filteredNames: string[];
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 
   ngOnInit(): void {
   }
@@ -29,15 +30,18 @@ export class HomePageComponent implements OnInit {
     };
 
   search(event) {
-    this.selectedName = "";
     if (this.names == undefined) {
       this.names = Object.entries(this.data).map(([k, v]) => k)
     }
     this.filteredNames = this.names.filter(x => x.toUpperCase().includes(event.query.toUpperCase()));
+    if (this.filteredNames.length == 0) {
+      this.messageService.add({ severity: 'warn', summary: `Unable to ${event.query}'s table`, detail: 'Please check for typos' });
+    }
   }
 
   select(event) {
     this.selectedName = event
   }
+
 
 }

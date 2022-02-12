@@ -29,3 +29,7 @@
     color: white !important;
 }
 
+.p-toast {
+    width: 50% !important;
+    font-size: 10px !important;
+}
