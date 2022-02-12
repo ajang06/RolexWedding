@@ -1,8 +1,12 @@
-<h1>Welcome to the Rolex Wedding</h1>
-<p-autoComplete [(ngModel)]="text" [suggestions]="filteredNames" (completeMethod)="search($event)"
-    [placeholder]="'Enter your name'" [dropdown]="true"
-    (onSelect) = "select($event)"></p-autoComplete>
-
-    <br>
-    <br>
-<div *ngIf= "selectedName"> Hey {{selectedName}}, you are at the {{data[selectedName]}} table!</div>
+<div class="container">
+    <div class="col-md-12">
+        <img class="title" src="assets\title2.gif">
+    </div>
+    <div class="content-container col-md-12">
+        <p-autoComplete [(ngModel)]="text" [suggestions]="filteredNames" (completeMethod)="search($event)"
+            [placeholder]="'Enter your name'" [dropdown]="true" (onSelect)="select($event)"></p-autoComplete>
+        <br>
+        <div class="displayTableInfo" *ngIf="selectedName"> Hey {{selectedName}}, you are at the
+            {{data[selectedName]}} table!</div>
+    </div>
+</div>

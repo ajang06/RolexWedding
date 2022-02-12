@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    /* background-color: #162938; */
+    background-image: url("../../assets/background.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+.title {
+    width: 100%;
+}
+
+.displayTableInfo {
+    color: var(--dusty-blue);
+    font-weight: 500;
+    padding: 20px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.content-container {
+    padding: 15px;
+}
+
+

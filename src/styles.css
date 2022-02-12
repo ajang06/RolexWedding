@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+:root {
+    --dusty-blue: #889bae;
+    --secondary-color: #d08488;
+
+}
+
+.p-button {
+    background: var(--secondary-color) !important;
+    border: var(--secondary-color) !important;
+}
+
+.p-inputtext:enabled:focus {
+    border-color: var(--secondary-color) !important;
+    box-shadow: none !important;
+}
+
+.p-inputtext:enabled:hover {
+    border-color: var(--secondary-color) !important; 
+}
+
+.p-inputtext, .p-autocomplete-panel {
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+    background-color: rgba(255,255,255,0.5) !important;
+    color: white !important;
+}
+
+.p-autocomplete-input, .p-autocomplete-input::placeholder, .p-autocomplete-item{
+    color: white !important;
+}
+
