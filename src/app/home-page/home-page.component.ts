@@ -30,6 +30,7 @@ export class HomePageComponent implements OnInit {
     };
 
   search(event) {
+    this.selectedName = "";
     if (this.names == undefined) {
       this.names = Object.entries(this.data).map(([k, v]) => k)
     }
