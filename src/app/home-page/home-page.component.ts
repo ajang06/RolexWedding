@@ -21,12 +21,14 @@ export class HomePageComponent implements OnInit {
 
   data =
     {
-      "Aron Jang": "Hermann Park",
-      "John Doe": "Terry Hershey Park",
-      "Alex Jang": "Waterwall Park",
-      "Rose Lee": "Waterwall Park",
-      "Jimmy Jang": "Buffalo Bayou Park",
-      "Derry Jang": "Eastern Glades Park"
+      "Aron": "Hermann Park",
+      "John": "Terry Hershey Park",
+      "Alex": "Waterwall Park",
+      "Rose": "Waterwall Park",
+      "Jimmy": "Buffalo Bayou Park",
+      "Derry": "Eastern Glades Park",
+      "Daniel": "Bendwood Park",
+      "Matt": "Eastern Glades Park"
     };
 
   search(event) {

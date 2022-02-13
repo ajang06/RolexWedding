@@ -15,12 +15,12 @@
 }
 
 .p-inputtext:enabled:focus {
-    border-color: var(--secondary-color) !important;
+    border-color: var(--dusty-blue) !important;
     box-shadow: none !important;
 }
 
 .p-inputtext:enabled:hover {
-    border-color: var(--secondary-color) !important; 
+    border-color: var(--dusty-blue) !important; 
 }
 
 .p-inputtext, .p-autocomplete-panel {

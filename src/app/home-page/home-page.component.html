@@ -1,13 +1,15 @@
 <div class="container">
     <p-toast></p-toast>
     <div class="col-md-12">
-        <img class="title" src="assets\new_title.png">
+        <img class="title" src="assets\title.png">
     </div>
     <div class="content-container col-md-12">
         <p-autoComplete [(ngModel)]="text" [suggestions]="filteredNames" (completeMethod)="search($event)"
             [placeholder]="'Enter your first name'" [dropdown]="true" (onSelect)="select($event)"></p-autoComplete>
         <br>
-        <div class="displayTableInfo" *ngIf="selectedName"> Hey <span class = "display-bold">{{selectedName}}</span>, you are at the
-            <span class = "display-bold">{{data[selectedName]}} Table</span>!</div>
+        <div class="displayTableInfo" *ngIf="selectedName"> Hi {{selectedName}} - Your
+            seat is at the
+            <div class="display-bold" *ngIf="selectedName">{{data[selectedName]}} Table</div>
+        </div>
     </div>
 </div>
