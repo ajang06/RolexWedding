@@ -22,7 +22,7 @@ export class HomePageComponent implements OnInit {
   data =
     {
       "Aron": "Hermann Park",
-      "John": "Terry Hershey Park",
+      "Alexander": "Terry Hershey Park",
       "Alex": "Waterwall Park",
       "Rose": "Waterwall Park",
       "Jimmy": "Buffalo Bayou Park",

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
 
 .container {
     width: 100%;
@@ -14,21 +14,45 @@
     width: 100%;
 }
 
+.title-font {
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 60px;
+    line-height: 30px;
+    color: var(--dusty-blue);
+    padding: 90px 15px 0px 15px;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: end;
+}
+
+.display-name {
+    text-align: left;
+}
+
 .displayTableInfo {
-    color: white;
-    font-weight: 300;
-    padding: 50px 0px;
+    color: var(--dusty-blue);
+    font-family: 'Bonheur Royale', cursive;
     font-size: 30px;
+    font-weight: 300;
+    line-height: 35px;
+    padding: 40px 0px;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.tag {
+    padding: 40px 0px;
+    display: block;
 }
 
 .display-bold {
     font-weight: 700;
-    color: var(--dusty-blue);
-    font-family: 'Alex Brush', cursive;
-    font-size: 37px;
-    padding: 10px 0px;
+    color: white;
+    font-family: 'Bonheur Royale', cursive;
 }
 
 .content-container {

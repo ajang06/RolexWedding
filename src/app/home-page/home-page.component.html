@@ -1,15 +1,29 @@
 <div class="container">
     <p-toast></p-toast>
-    <div class="col-md-12">
+    <!-- <div class="col-md-12">
         <img class="title" src="assets\title.png">
+    </div> -->
+    <div class="title-font">
+        <div class="left">Our favorite people,</div>
+        <br>
+        <div class="right">our favorite parks</div>
     </div>
     <div class="content-container col-md-12">
         <p-autoComplete [(ngModel)]="text" [suggestions]="filteredNames" (completeMethod)="search($event)"
             [placeholder]="'Enter your first name'" [dropdown]="true" (onSelect)="select($event)"></p-autoComplete>
         <br>
-        <div class="displayTableInfo" *ngIf="selectedName"> Hi {{selectedName}} - Your
-            seat is at the
-            <div class="display-bold" *ngIf="selectedName">{{data[selectedName]}} Table</div>
+        <div class="displayTableInfo" *ngIf="selectedName">
+            <div class="display-name">
+                We’re so glad you’re here, {{selectedName}}!<br>
+                We saved you a seat at the <br>
+                <span class="display-bold" *ngIf="selectedName">{{data[selectedName]}}</span>  table.
+                <br>
+                <span class = "tag">
+                    Love,<br>
+                    Rose & Alex
+                </span>
+            </div>
+
         </div>
     </div>
 </div>

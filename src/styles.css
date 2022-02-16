@@ -35,5 +35,6 @@
 
 .p-toast {
     width: 90vw !important;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
     font-size: 15px !important;
 }
