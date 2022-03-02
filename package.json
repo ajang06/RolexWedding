@@ -1,6 +1,7 @@
 {
   "name": "rolex-wedding",
   "version": "0.0.0",
+  "homepage": "https://ajang06.github.io/RolexWedding/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
